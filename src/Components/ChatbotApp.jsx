@@ -64,11 +64,11 @@ activeChat, setActiveChat, onNewChat}) => {
         setIsTyping(true)
 
 
-        const response = await fetch("https://ai.google.dev/gemini-api/docs/models/gemini#gemini-1.5-flash", {
+        const response = await fetch("YOUR_URL", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
-                Authorization: `Bearer AIzaSyBVKNnNipLSGpjV8GwLdfkyNF02IRQ96SQ`,
+                Authorization: `Bearer YOUR_SECRET_API_KEY`,
             },
             body: JSON.stringify({
                 model: "gemini-1.5-flash",
